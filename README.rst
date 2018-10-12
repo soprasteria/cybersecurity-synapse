@@ -149,7 +149,7 @@ To install the synapse homeserver run::
     source ~/.synapse/bin/activate
     pip install --upgrade pip
     pip install --upgrade setuptools
-    pip install https://github.com/matrix-org/synapse/tarball/master
+    pip install https://github.com/soprasteria/cybersecurity-synapse/tarball/master
 
 This installs synapse, along with the libraries it uses, into a virtual
 environment under ``~/.synapse``.  Feel free to pick a different directory
@@ -256,9 +256,9 @@ As of Synapse 0.19 we finally support IPv6, many thanks to @kyrias and @glyph
 for providing PR #1696.
 
 However, for federation to work on hosts with IPv6 DNS servers you **must**
-be running Twisted 17.1.0 or later - see https://github.com/matrix-org/synapse/issues/1002
+be running Twisted 17.1.0 or later - see https://-github.com/soprasteria/cybersecurity-synapse/issues/1002
 for details.  We can't make Synapse depend on Twisted 17.1 by default
-yet as it will break most older distributions (see https://github.com/matrix-org/synapse/pull/1909)
+yet as it will break most older distributions (see https://github.com/soprasteria/cybersecurity-synapse/pull/1909)
 so if you are using operating system dependencies you'll have to install your
 own Twisted 17.1 package via pip or backports etc.
 
@@ -301,7 +301,7 @@ start sending messages.
 
 (The homeserver runs a web client by default at https://localhost:8448/, though
 as of the time of writing it is somewhat outdated and not really recommended -
-https://github.com/matrix-org/synapse/issues/1527).
+https://github.com/soprasteria/cybersecurity-synapse/issues/1527).
 
 .. _`client-user-reg`:
 
@@ -334,7 +334,7 @@ Matrix serves raw user generated data in some APIs - specifically the `content
 repository endpoints <https://matrix.org/docs/spec/client_server/latest.html#get-matrix-media-r0-download-servername-mediaid>`_.
 
 Whilst we have tried to mitigate against possible XSS attacks (e.g.
-https://github.com/matrix-org/synapse/pull/1021) we recommend running
+https://github.com/soprasteria/cybersecurity-synapse/pull/1021) we recommend running
 matrix homeservers on a dedicated domain name, to limit any malicious user generated
 content served to web browsers a matrix API from being able to attack webapps hosted
 on the same domain.  This is particularly true of sharing a matrix webclient and
@@ -397,7 +397,7 @@ pip may be outdated (6.0.7-1 and needs to be upgraded to 6.0.8-1 )::
 You also may need to explicitly specify python 2.7 again during the install
 request::
 
-    pip2.7 install https://github.com/matrix-org/synapse/tarball/master
+    pip2.7 install https://github.com/soprasteria/cybersecurity-synapse/tarball/master
 
 If you encounter an error with lib bcrypt causing an Wrong ELF Class:
 ELFCLASS32 (x64 Systems), you may need to reinstall py-bcrypt to correctly
@@ -445,7 +445,7 @@ settings require a slightly more difficult installation process.
 5) Optionally, use ``pip`` to install ``lxml``, which Synapse needs to parse
    webpages for their titles.
 6) Use ``pip`` to install this repository: ``pip install
-   https://github.com/matrix-org/synapse/tarball/master``
+   https://github.com/soprasteria/cybersecurity-synapse/tarball/master``
 7) Optionally, change ``_synapse``'s shell to ``/bin/false`` to reduce the
    chance of a compromised Synapse server being used to take over your box.
 
