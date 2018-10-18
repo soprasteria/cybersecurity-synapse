@@ -149,7 +149,7 @@ To install the synapse homeserver run::
     source ~/.synapse/bin/activate
     pip install --upgrade pip
     pip install --upgrade setuptools
-    pip install https://github.com/soprasteria/cybersecurity-synapse/tarball/master
+    pip install h.
 
 This installs synapse, along with the libraries it uses, into a virtual
 environment under ``~/.synapse``.  Feel free to pick a different directory
